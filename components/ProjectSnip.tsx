@@ -3,33 +3,48 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { StyledProjectSnip } from '../styles/ProjectSnip.styled'
 import imageLoader from "../helpers/imageLoader"
+import {BiLink} from 'react-icons/bi'
 
 interface interfacePrj {
+  id: number,
   title: string,
   link: string,
   img: string,
+  tech: Array<string>,
+  desc: string,
 }
 
 const ProjectSnip: FC<interfacePrj> = (props): JSX.Element => {
   
   return (
-    <StyledProjectSnip>
+    <StyledProjectSnip key={props?.id}>
+      <div className='thumbnail'>
+        <Image 
+          loader={imageLoader}
+          unoptimized
+          src={props?.img}
+          alt={`thumbnail`}
+          width={400} height={400} 
+        />
+      </div>
 
-      <h3>{props?.title}</h3>
+      <div className='info'>
+        <h2>{props?.title}</h2>
 
-      <Image 
-        loader={imageLoader}
-        unoptimized
-        src={props?.img}
-        alt={`thumbnail`}
-        width={72} height={72} 
-      />
 
-      <Link href={props.link}>
-        <a className="btn--Med"> Live Demo</a>
-      </Link>
+        <Link href={props.link}>
+          <a className="btn--Med"> <BiLink /> Live Demo</a>
+        </Link>
 
-      <p>This is the description of the project</p>
+        <ul style={{listStyleType: "none", margin: "0", padding: "0"}} className='tag-list'>
+          {props.tech.map((t, i) => {
+            return <span className='tag' key={i}>{t}</span>
+          })}
+        </ul>
+
+        <p>{props?.desc}</p>
+        
+      </div>
 
     </StyledProjectSnip>
   )

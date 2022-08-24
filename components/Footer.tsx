@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        href="https://www.WilliaMusic.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -16,9 +16,9 @@ const Footer = () => {
           <Image 
             loader={imageLoader}
             unoptimized
-            src="/vercel.svg" 
-            alt="Vercel Logo" 
-            width={72} height={16} 
+            src="/tawtaw-logo-3.svg" 
+            alt="There a Will There a Website Logo" 
+            width={72} height={32} 
           />
         </span>
       </a>

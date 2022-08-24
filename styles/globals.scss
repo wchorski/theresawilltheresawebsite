@@ -21,25 +21,39 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+// * move this to other script later
+
 a {
   color: var(--c-1);
   /* text-decoration: none; */
+
+  &.btn--Med{
+    background-color: var(--c-1);
+    color: var(--c-dark);
+    display: block;
+    border: solid var(--c-1) 2px;
+    border-radius: 5px;
+    width: 7em;
+    padding: .2em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-decoration: none;
+  }
 }
+
+
 
 a:hover{
   color: var(--c-2);
 }
 
-a.btn--Med{
-  background-color: var(--c-1);
-  color: var(--c-dark);
-  display: block;
-  border: solid var(--c-1) 2px;
-  border-radius: 5px;
-  width: 7em;
-  padding: .2em;
-  text-align: center;
+.tag{
+  background-color: var(--c-2);
+  margin-right: .3em;
+  padding: 0 1em;
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -65,4 +79,4 @@ button {
     color: white;
     /* background: black; */
   }
-}
+} 

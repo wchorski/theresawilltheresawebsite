@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Heart-Chart",
+    "img": "https://i.giphy.com/media/DkVufXnA4CmsNcVOay/giphy.webp",
+    "link": "https://heart-chart.williamusic.com/",
+    "desc": "clicker style game that you play competitivley with friends. Grow your slide of the pie by adding hearts",
+    "tech": [
+      "NextJS",
+      "MongoDB",
+      "Docker"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Network-Bulletin",
+    "img": "https://media1.giphy.com/media/3z9WaWu7qn2hjsURl2/giphy.gif",
+    "link": "https://nodesignage.williamusic.com/",
+    "desc": "create, display, and save collections of slides to display on any machine that can run a browser.",
+    "tech": [
+      "React",
+      "Express",
+      "MongoDB",
+      "Docker"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "WilliaMusic",
+    "img": "https://www.williamusic.com/wp-content/uploads/2021/07/WM_Logo4.png",
+    "link": "https://www.williamusic.com/",
+    "desc": "Portfolio website for a music making",
+    "tech": [
+      "Wordpress",
+      "MariaDB",
+      "Docker"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+$anime-time: 8s;
+
+$box-size: 200px;
+$clip-distance: .05;
+$clip-size: $box-size * (1 + $clip-distance * 2);
+$path-width: 2px;
+
+$main-color: #69ca62;
+
+$codepen-logo-path: url('//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png');
+
+.btnAnim{
+  background-color: var(--c-2);
+  position: relative;
+  // border: solid white 2px;
+  text-decoration: none;
+  padding: 2em 5em;
+  // animation: animBtn 3s linear infinite;
+  overflow: hidden;
+  border-radius: 10px;
+
+
+  h3{
+    position: relative;
+    z-index: 10;
+  }
+
+  &::before{
+    content: '#';
+    position: absolute;
+    top: -180px;
+    right: 100px;
+    width: 50px;
+    height: 380%;
+    background: linear-gradient(var(--c-2), var(--c-1));
+    // border-top: solid pink 2px;
+    animation: bordr 20s linear infinite;
+  }
+
+  &::after{
+    content:  '';
+    position: absolute;
+    inset: 4px;
+    background-color: var(--c-2);
+  }
+
+  &:hover{
+
+    color: var(--c-dark);
+    background-color: var(--c-1);
+    &::before{
+      animation: bordr 3s linear infinite;
+    }
+  }
+}
+
+
+@keyframes animBtn {
+  0%{
+    background-color: green;
+  }
+
+  50%{
+    background-color: yellow;
+  }
+
+  100%{
+    background-color: green;
+  }
+}
+@keyframes bordr {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
