@@ -1,17 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Heart-Chart",
-    "img": "https://i.giphy.com/media/DkVufXnA4CmsNcVOay/giphy.webp",
-    "link": "https://heart-chart.williamusic.com/",
-    "desc": "clicker style game that you play competitivley with friends. Grow your slide of the pie by adding hearts",
-    "tech": [
-      "NextJS",
-      "MongoDB",
-      "Docker"
-    ]
-  },
-  {
     "id": 2,
     "title": "Network-Bulletin",
     "img": "https://media1.giphy.com/media/3z9WaWu7qn2hjsURl2/giphy.gif",
@@ -20,6 +8,30 @@
     "tech": [
       "React",
       "Express",
+      "MongoDB",
+      "Docker"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Party Vibe Online",
+    "img": "https://media.giphy.com/media/kgAkXAugB5XYucRgvh/giphy.gif",
+    "link": "https://partyvibeonline.williamusic.com",
+    "desc": "Party 4 the people. A wordpress site that bolsters a client planner, employee schedualing, service booking, and archive of blog posts",
+    "tech": [
+      "Wordpress",
+      "MariaDB",
+      "Docker"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Heart-Chart",
+    "img": "https://i.giphy.com/media/DkVufXnA4CmsNcVOay/giphy.webp",
+    "link": "https://heart-chart.williamusic.com/",
+    "desc": "clicker style game that you play competitivley with friends. Grow your slide of the pie by adding hearts",
+    "tech": [
+      "NextJS",
       "MongoDB",
       "Docker"
     ]
@@ -43,6 +55,18 @@
     "img": "https://www.williamusic.com/wp-content/uploads/2021/07/WM_Logo4.png",
     "link": "https://www.williamusic.com/",
     "desc": "Portfolio website for a music making",
+    "tech": [
+      "Wordpress",
+      "MariaDB",
+      "Docker"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Countryside Banquets",
+    "img": "https://media.giphy.com/media/iBTcBW3RXPz3pb9lR2/giphy.gif",
+    "link": "https://countrysidebanquets.com/",
+    "desc": "Simplicity & elegance. A landing page that says Less is More",
     "tech": [
       "Wordpress",
       "MariaDB",
