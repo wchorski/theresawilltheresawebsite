@@ -20,6 +20,11 @@ export function TileBG  ( {children}: {children: React.ReactNode} )  {
       
     }
   }, [])
+
+  const setBoxClick = (e: any) => {
+    const target = e.currentTarget
+    target.classList.toggle('sqr-active')
+  }
   
   return (
     <StyledTileBG>
@@ -30,7 +35,17 @@ export function TileBG  ( {children}: {children: React.ReactNode} )  {
 
       <div className='box-cont'>
         {boxsState.map((box, i) => {
-          return <div className='box' key={i}></div>
+
+          const rndNum = Math.random() 
+          console.log(rndNum);
+          
+
+          if(rndNum > .05){
+            return <div onClick={e => setBoxClick(e)} className='box' key={i} ></div>
+          } else {
+            return <div onClick={e => setBoxClick(e)} className='box sqr-active' key={i} ></div>
+          }
+
         })}
       </div>
 

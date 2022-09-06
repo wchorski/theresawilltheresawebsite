@@ -37,6 +37,18 @@
     ]
   },
   {
+    "id": 7,
+    "title": "Admit One DJs",
+    "img": "https://media.giphy.com/media/VBWUrTQQIPciyqOrYk/giphy.gif",
+    "link": "https://admitonedjs.williamusic.com/",
+    "desc": "Information and contact page with elegant color scheme and custom block design. Videos on the home page are optimized and lazy loaded",
+    "tech": [
+      "Wordpress",
+      "MariaDB",
+      "Docker"
+    ]
+  },
+  {
     "id": 4,
     "title": "Node-Admin",
     "img": "https://media4.giphy.com/media/PmBUXWAxbfDzHRRGt3/giphy.gif?cid=790b7611f3016819f9936a4f3e7618f5be96328e34d34082&rid=giphy.gif&ct=g",
@@ -62,7 +74,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Countryside Banquets",
     "img": "https://media.giphy.com/media/iBTcBW3RXPz3pb9lR2/giphy.gif",
     "link": "https://countrysidebanquets.com/",
